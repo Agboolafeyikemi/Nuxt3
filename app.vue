@@ -11,11 +11,6 @@
           class="text-xl font-bold leading-none text-gray-900 dark:text-white">
           {{ title }}
         </h3>
-        <a
-          href="#"
-          class="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500">
-          View all
-        </a>
       </div>
 
       <div class="flow-root">
@@ -23,7 +18,7 @@
           <List v-for="winner in winnersList" :key="winner" :winner="winner" />
         </ul>
       </div>
-      <InfiniteLoading @infinite="load" />
+      <InfiniteLoading class="text-white" @infinite="load" />
     </div>
   </div>
 </template>
